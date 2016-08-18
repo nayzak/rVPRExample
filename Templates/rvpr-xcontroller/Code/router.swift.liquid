@@ -1,5 +1,6 @@
 {% include 'header' %}
 import UIKit
+import ReactiveVPR
 import ReactiveKit
 
 public final class {{ module_info.name }}Router: Router<UIViewController> {
@@ -7,9 +8,9 @@ public final class {{ module_info.name }}Router: Router<UIViewController> {
   //MARK: Module builders
 
 
-//  public init() {
-//
-//  }
+  public override init() {
+
+  }
 }
 
 extension {{ module_info.name }}Router: {{ module_info.name }}RouterOutput {
