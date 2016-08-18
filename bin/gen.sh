@@ -14,6 +14,14 @@ if [[ $command == "usecase" ]]; then
   exit 0
 fi
 
+if [[ $command == "rm-usecase" ]]; then
+  rm -rf Assemblies/UseCases/$module_name
+  rm -rf UseCases/$module_name
+  rm -rf UseCasesTests/$module_name
+  rm -rf rVPRExampleTests/Assemblies/UseCases/$module_name
+  exit 0
+fi
+
 echo "Nothing to do"
 
 exit 1
