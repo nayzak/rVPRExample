@@ -1,0 +1,25 @@
+### Headers settings
+company: nayzak
+
+### Xcode project settings
+project_name: rVPRExample
+xcodeproj_path: rVPRExample.xcodeproj
+
+### Code generation settings section
+# The main project target name
+project_target: rVPRExample
+
+### Tests generation settings section
+# The tests target name
+test_target: rVPRExampleTests
+
+### Dependencies settings section
+
+cartfile_path: Cartfile
+
+### Templates
+catalogs:
+- 'https://github.com/nayzak/generamba-templates'
+templates:
+- {name: rusecase}
+- {name: rusecase-assembly}
