@@ -1,4 +1,6 @@
 {% include 'header' %}
+import UseCases
+
 struct {{ module_info.name }}InteractorAssembly {
 
   static let make: {{ module_info.name }}InteractorBuilder = { input in
