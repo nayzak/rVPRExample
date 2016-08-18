@@ -27,7 +27,7 @@ if [[ $command == "rm-usecase" ]]; then
 fi
 
 if [[ $command == "vpr-xcontroller" ]]; then
-  generamba gen $module_name rvpr-xcontroller --module-targets 'UI' --module-path UITests/Stories$custom_path --test-targets 'UITests' --test-path UITests/Stories$custom_path
+  generamba gen $module_name rvpr-xcontroller --module-targets 'UI' --module-path UI/Stories$custom_path --test-targets 'UITests' --test-path UITests/Stories$custom_path
   generamba gen $module_name rvpr-controller-assembly --module-targets $project_name --module-path Assemblies/VPRs --test-targets $project_tests_target_name --test-path  $project_tests_target_name/Assemblies/VPRs
   exit 0
 fi
