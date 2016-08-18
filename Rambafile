@@ -9,9 +9,18 @@ xcodeproj_path: rVPRExample.xcodeproj
 # The main project target name
 project_target: rVPRExample
 
+project_file_path: rVRPExample
+
+project_group_path: rVRPExample
+
+
 ### Tests generation settings section
 # The tests target name
 test_target: rVPRExampleTests
+
+test_file_path: rVRPExampleTests
+
+test_group_path: rVRPExampleTests
 
 ### Dependencies settings section
 
