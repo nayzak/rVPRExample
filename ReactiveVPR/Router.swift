@@ -15,5 +15,7 @@ public class Router<V: UIViewController> {
   public weak var navigationController: UINavigationController?
   public weak var viewController: V!
 
-  let rBag = DisposeBag()
+  public let rBag = DisposeBag()
+
+  public init() { }
 }

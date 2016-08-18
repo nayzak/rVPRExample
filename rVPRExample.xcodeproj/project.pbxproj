@@ -41,6 +41,7 @@
 		F59A43341D65BCF200E9EFCD /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59A43321D65BCF200E9EFCD /* Bindable.swift */; };
 		F59A43351D65BCF200E9EFCD /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59A43331D65BCF200E9EFCD /* Presentable.swift */; };
 		F59A43361D65BD4A00E9EFCD /* ReactiveVPR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F59A43191D65B89B00E9EFCD /* ReactiveVPR.framework */; };
+		F59A43371D65C2F500E9EFCD /* ReactiveKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F59A42C61D655F1600E9EFCD /* ReactiveKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -178,6 +179,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F59A43371D65C2F500E9EFCD /* ReactiveKit.framework in Frameworks */,
 				F59A43201D65B89B00E9EFCD /* ReactiveVPR.framework in Frameworks */,
 				F59A43011D65AF0A00E9EFCD /* UI.framework in Frameworks */,
 				F59A42B81D655E4C00E9EFCD /* UseCases.framework in Frameworks */,
@@ -929,6 +931,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = rVPRExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -942,6 +948,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = rVPRExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1150,7 +1160,7 @@
 				);
 				INFOPLIST_FILE = ReactiveVPR/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nayzak.ReactiveVPR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1176,7 +1186,7 @@
 				);
 				INFOPLIST_FILE = ReactiveVPR/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nayzak.ReactiveVPR;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1259,6 +1269,7 @@
 				F59A43231D65B89B00E9EFCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
