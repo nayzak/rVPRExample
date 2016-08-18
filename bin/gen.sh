@@ -9,7 +9,8 @@ if [[ -z $command || -z $module_name ]]; then
 fi
 
 if [[ $command == "usecase" ]]; then
-  generamba gen $module_name rusecase --module-targets 'UseCases' --module_path UseCases --test_targets 'UseCasesTests' --test_path UseCasesTests
+  generamba gen $module_name rusecase --module-targets 'UseCases' --module-path UseCases --test-targets 'UseCasesTests' --test-path UseCasesTests
+  generamba gen $module_name rusecase-assembly --module-targets 'rVPRExample' --module-path Assemblies/UseCases  --test-targets 'rVPRExampleTests' --test-path rVPRExampleTests/Assemblies/UseCases
   exit 0
 fi
 

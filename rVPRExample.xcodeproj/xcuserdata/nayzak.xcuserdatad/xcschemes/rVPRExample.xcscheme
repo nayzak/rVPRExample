@@ -38,6 +38,16 @@
                ReferencedContainer = "container:rVPRExample.xcodeproj">
             </BuildableReference>
          </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F59A42DA1D657FD300E9EFCD"
+               BuildableName = "rVPRExampleTests.xctest"
+               BlueprintName = "rVPRExampleTests"
+               ReferencedContainer = "container:rVPRExample.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
