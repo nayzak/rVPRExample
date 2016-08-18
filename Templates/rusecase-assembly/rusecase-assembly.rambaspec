@@ -7,11 +7,11 @@ license: MIT
 
 # The declarations for code files
 code_files:
-- {name: Assembly.swift, path: Code/assembly.swift.liquid}
+- {name: InteractorAssembly.swift, path: Code/assembly.swift.liquid}
 
 # The declarations for test files
 test_files:
-- {name: AssemblyTests.swift, path: Tests/assembly_tests.swift.liquid}
+- {name: InteractorAssemblyTests.swift, path: Tests/assembly_tests.swift.liquid}
 
 # Template dependencies
 dependencies:
