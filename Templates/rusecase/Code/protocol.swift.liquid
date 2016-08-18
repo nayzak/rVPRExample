@@ -1,0 +1,16 @@
+{% include 'header' %}
+import ReactiveKit
+
+
+//MARK: IO
+
+public typealias {{ module_info.name }}InteractorInput = ()
+
+public protocol {{ module_info.name }}InteractorOutput {
+
+}
+
+
+//MARK: Builder
+
+public typealias {{ module_info.name }}InteractorBuilder = (input: {{ module_info.name }}InteractorInput) -> {{ module_info.name }}InteractorOutput

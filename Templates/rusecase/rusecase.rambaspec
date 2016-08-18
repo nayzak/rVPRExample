@@ -1,0 +1,19 @@
+# Template information section
+name: rusecase
+summary: Template for reactive UseCase
+author: Ian Kazlauskas
+version: 1.0.0
+license: MIT
+
+# The declarations for code files
+code_files:
+- {name: Interactor.swift, path: Code/interactor.swift.liquid}
+- {name: Protocol.swift, path: Code/protocol.swift.liquid}
+
+# The declarations for test files
+test_files:
+- {name: InteractorTests.swift, path: Tests/interactor_tests.swift.liquid}
+
+# Template dependencies
+dependencies:
+- ReactiveKit
