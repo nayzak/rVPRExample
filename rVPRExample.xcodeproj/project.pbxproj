@@ -28,6 +28,19 @@
 		F59A430C1D65AF5500E9EFCD /* ReactiveUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F59A42C71D655F1600E9EFCD /* ReactiveUIKit.framework */; };
 		F59A430E1D65AF6900E9EFCD /* ReactiveKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F59A42C61D655F1600E9EFCD /* ReactiveKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F59A430F1D65AF6B00E9EFCD /* ReactiveUIKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = F59A42C71D655F1600E9EFCD /* ReactiveUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F59A431C1D65B89B00E9EFCD /* ReactiveVPR.h in Headers */ = {isa = PBXBuildFile; fileRef = F59A431B1D65B89B00E9EFCD /* ReactiveVPR.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F59A43201D65B89B00E9EFCD /* ReactiveVPR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F59A43191D65B89B00E9EFCD /* ReactiveVPR.framework */; };
+		F59A43211D65B89B00E9EFCD /* ReactiveVPR.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F59A43191D65B89B00E9EFCD /* ReactiveVPR.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F59A43251D65B8B500E9EFCD /* ReactiveKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F59A42C61D655F1600E9EFCD /* ReactiveKit.framework */; };
+		F59A43261D65B8B800E9EFCD /* ReactiveUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F59A42C71D655F1600E9EFCD /* ReactiveUIKit.framework */; };
+		F59A432B1D65BCAB00E9EFCD /* UIViewController+Retain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59A43281D65BCAB00E9EFCD /* UIViewController+Retain.swift */; };
+		F59A432C1D65BCAB00E9EFCD /* UIViewController+LoadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59A43291D65BCAB00E9EFCD /* UIViewController+LoadView.swift */; };
+		F59A432D1D65BCAB00E9EFCD /* UIViewController+Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59A432A1D65BCAB00E9EFCD /* UIViewController+Presentable.swift */; };
+		F59A432F1D65BCD000E9EFCD /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59A432E1D65BCD000E9EFCD /* Router.swift */; };
+		F59A43311D65BCDA00E9EFCD /* XibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59A43301D65BCDA00E9EFCD /* XibViewController.swift */; };
+		F59A43341D65BCF200E9EFCD /* Bindable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59A43321D65BCF200E9EFCD /* Bindable.swift */; };
+		F59A43351D65BCF200E9EFCD /* Presentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59A43331D65BCF200E9EFCD /* Presentable.swift */; };
+		F59A43361D65BD4A00E9EFCD /* ReactiveVPR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F59A43191D65B89B00E9EFCD /* ReactiveVPR.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +93,13 @@
 			remoteGlobalIDString = F59A42EB1D65AF0A00E9EFCD;
 			remoteInfo = UI;
 		};
+		F59A431E1D65B89B00E9EFCD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F59A42801D655A7400E9EFCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F59A43181D65B89B00E9EFCD;
+			remoteInfo = ReactiveVPR;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -89,6 +109,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				F59A43211D65B89B00E9EFCD /* ReactiveVPR.framework in Embed Frameworks */,
 				F59A43021D65AF0A00E9EFCD /* UI.framework in Embed Frameworks */,
 				F59A42BA1D655E4C00E9EFCD /* UseCases.framework in Embed Frameworks */,
 			);
@@ -140,6 +161,16 @@
 		F59A42F01D65AF0A00E9EFCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F59A42F51D65AF0A00E9EFCD /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F59A42FE1D65AF0A00E9EFCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F59A43191D65B89B00E9EFCD /* ReactiveVPR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ReactiveVPR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F59A431B1D65B89B00E9EFCD /* ReactiveVPR.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReactiveVPR.h; sourceTree = "<group>"; };
+		F59A431D1D65B89B00E9EFCD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F59A43281D65BCAB00E9EFCD /* UIViewController+Retain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Retain.swift"; sourceTree = "<group>"; };
+		F59A43291D65BCAB00E9EFCD /* UIViewController+LoadView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+LoadView.swift"; sourceTree = "<group>"; };
+		F59A432A1D65BCAB00E9EFCD /* UIViewController+Presentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Presentable.swift"; sourceTree = "<group>"; };
+		F59A432E1D65BCD000E9EFCD /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		F59A43301D65BCDA00E9EFCD /* XibViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XibViewController.swift; sourceTree = "<group>"; };
+		F59A43321D65BCF200E9EFCD /* Bindable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Bindable.swift; sourceTree = "<group>"; };
+		F59A43331D65BCF200E9EFCD /* Presentable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Presentable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +178,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F59A43201D65B89B00E9EFCD /* ReactiveVPR.framework in Frameworks */,
 				F59A43011D65AF0A00E9EFCD /* UI.framework in Frameworks */,
 				F59A42B81D655E4C00E9EFCD /* UseCases.framework in Frameworks */,
 			);
@@ -180,6 +212,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F59A43361D65BD4A00E9EFCD /* ReactiveVPR.framework in Frameworks */,
 				F59A43091D65AF4000E9EFCD /* ReactiveKit.framework in Frameworks */,
 				F59A430A1D65AF4200E9EFCD /* ReactiveUIKit.framework in Frameworks */,
 			);
@@ -192,6 +225,15 @@
 				F59A42F61D65AF0A00E9EFCD /* UI.framework in Frameworks */,
 				F59A430B1D65AF5300E9EFCD /* ReactiveKit.framework in Frameworks */,
 				F59A430C1D65AF5500E9EFCD /* ReactiveUIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F59A43151D65B89B00E9EFCD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F59A43251D65B8B500E9EFCD /* ReactiveKit.framework in Frameworks */,
+				F59A43261D65B8B800E9EFCD /* ReactiveUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -208,6 +250,7 @@
 				F59A42B21D655E4C00E9EFCD /* UseCasesTests */,
 				F59A42ED1D65AF0A00E9EFCD /* UI */,
 				F59A42FB1D65AF0A00E9EFCD /* UITests */,
+				F59A431A1D65B89B00E9EFCD /* ReactiveVPR */,
 				F59A42C51D655EFB00E9EFCD /* Frameworks */,
 				F59A42891D655A7400E9EFCD /* Products */,
 			);
@@ -222,6 +265,7 @@
 				F59A42DB1D657FD300E9EFCD /* rVPRExampleTests.xctest */,
 				F59A42EC1D65AF0A00E9EFCD /* UI.framework */,
 				F59A42F51D65AF0A00E9EFCD /* UITests.xctest */,
+				F59A43191D65B89B00E9EFCD /* ReactiveVPR.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -360,6 +404,30 @@
 			path = VPRs;
 			sourceTree = "<group>";
 		};
+		F59A431A1D65B89B00E9EFCD /* ReactiveVPR */ = {
+			isa = PBXGroup;
+			children = (
+				F59A431B1D65B89B00E9EFCD /* ReactiveVPR.h */,
+				F59A431D1D65B89B00E9EFCD /* Info.plist */,
+				F59A43271D65BC7300E9EFCD /* UIViewController */,
+				F59A432E1D65BCD000E9EFCD /* Router.swift */,
+				F59A43321D65BCF200E9EFCD /* Bindable.swift */,
+				F59A43331D65BCF200E9EFCD /* Presentable.swift */,
+			);
+			path = ReactiveVPR;
+			sourceTree = "<group>";
+		};
+		F59A43271D65BC7300E9EFCD /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				F59A43281D65BCAB00E9EFCD /* UIViewController+Retain.swift */,
+				F59A43291D65BCAB00E9EFCD /* UIViewController+LoadView.swift */,
+				F59A432A1D65BCAB00E9EFCD /* UIViewController+Presentable.swift */,
+				F59A43301D65BCDA00E9EFCD /* XibViewController.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -376,6 +444,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F59A42EF1D65AF0A00E9EFCD /* UI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F59A43161D65B89B00E9EFCD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F59A431C1D65B89B00E9EFCD /* ReactiveVPR.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,6 +473,7 @@
 			dependencies = (
 				F59A42B71D655E4C00E9EFCD /* PBXTargetDependency */,
 				F59A43001D65AF0A00E9EFCD /* PBXTargetDependency */,
+				F59A431F1D65B89B00E9EFCD /* PBXTargetDependency */,
 			);
 			name = rVPRExample;
 			productName = rVPRExample;
@@ -497,6 +574,24 @@
 			productReference = F59A42F51D65AF0A00E9EFCD /* UITests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F59A43181D65B89B00E9EFCD /* ReactiveVPR */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F59A43241D65B89B00E9EFCD /* Build configuration list for PBXNativeTarget "ReactiveVPR" */;
+			buildPhases = (
+				F59A43141D65B89B00E9EFCD /* Sources */,
+				F59A43151D65B89B00E9EFCD /* Frameworks */,
+				F59A43161D65B89B00E9EFCD /* Headers */,
+				F59A43171D65B89B00E9EFCD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReactiveVPR;
+			productName = ReactiveVPR;
+			productReference = F59A43191D65B89B00E9EFCD /* ReactiveVPR.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -526,6 +621,9 @@
 					F59A42F41D65AF0A00E9EFCD = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
+					F59A43181D65B89B00E9EFCD = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 				};
 			};
 			buildConfigurationList = F59A42831D655A7400E9EFCD /* Build configuration list for PBXProject "rVPRExample" */;
@@ -547,6 +645,7 @@
 				F59A42AB1D655E4C00E9EFCD /* UseCasesTests */,
 				F59A42EB1D65AF0A00E9EFCD /* UI */,
 				F59A42F41D65AF0A00E9EFCD /* UITests */,
+				F59A43181D65B89B00E9EFCD /* ReactiveVPR */,
 			);
 		};
 /* End PBXProject section */
@@ -590,6 +689,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		F59A42F31D65AF0A00E9EFCD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F59A43171D65B89B00E9EFCD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -662,6 +768,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F59A43141D65B89B00E9EFCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F59A43311D65BCDA00E9EFCD /* XibViewController.swift in Sources */,
+				F59A432F1D65BCD000E9EFCD /* Router.swift in Sources */,
+				F59A43341D65BCF200E9EFCD /* Bindable.swift in Sources */,
+				F59A432B1D65BCAB00E9EFCD /* UIViewController+Retain.swift in Sources */,
+				F59A432D1D65BCAB00E9EFCD /* UIViewController+Presentable.swift in Sources */,
+				F59A432C1D65BCAB00E9EFCD /* UIViewController+LoadView.swift in Sources */,
+				F59A43351D65BCF200E9EFCD /* Presentable.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -699,6 +819,11 @@
 			isa = PBXTargetDependency;
 			target = F59A42EB1D65AF0A00E9EFCD /* UI */;
 			targetProxy = F59A42FF1D65AF0A00E9EFCD /* PBXContainerItemProxy */;
+		};
+		F59A431F1D65B89B00E9EFCD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F59A43181D65B89B00E9EFCD /* ReactiveVPR */;
+			targetProxy = F59A431E1D65B89B00E9EFCD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1010,6 +1135,57 @@
 			};
 			name = Release;
 		};
+		F59A43221D65B89B00E9EFCD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ReactiveVPR/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nayzak.ReactiveVPR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F59A43231D65B89B00E9EFCD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = ReactiveVPR/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nayzak.ReactiveVPR;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1065,12 +1241,22 @@
 				F59A43041D65AF0A00E9EFCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F59A43081D65AF0A00E9EFCD /* Build configuration list for PBXNativeTarget "UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F59A43051D65AF0A00E9EFCD /* Debug */,
 				F59A43061D65AF0A00E9EFCD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F59A43241D65B89B00E9EFCD /* Build configuration list for PBXNativeTarget "ReactiveVPR" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F59A43221D65B89B00E9EFCD /* Debug */,
+				F59A43231D65B89B00E9EFCD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
