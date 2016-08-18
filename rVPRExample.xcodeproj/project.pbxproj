@@ -68,6 +68,7 @@
 				F59A42841D655A7400E9EFCD /* Sources */,
 				F59A42851D655A7400E9EFCD /* Frameworks */,
 				F59A42861D655A7400E9EFCD /* Resources */,
+				F59A429D1D655C5100E9EFCD /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,6 +123,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F59A429D1D655C5100E9EFCD /* Copy Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveKit.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ReactiveUIKit.framework",
+			);
+			name = "Copy Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F59A42841D655A7400E9EFCD /* Sources */ = {
