@@ -1,0 +1,2 @@
+github "ReactiveKit/ReactiveKit" ~> 2.1
+github "ReactiveKit/ReactiveUIKit" ~> 2.0
