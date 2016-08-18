@@ -1,0 +1,25 @@
+# Template information section
+name: rvpr-xcontroller
+summary: Template for rVPR module based on xib view controller with router
+author: Ian Kazlauskas
+version: 1.0.0
+license: MIT
+
+# The declarations for code files
+code_files:
+- {name: View.xib, path: Code/view.xib.liquid}
+- {name: View.swift, path: Code/view.swift.liquid}
+- {name: Presenter.swift, path: Code/presenter.swift.liquid}
+- {name: Router.swift, path: Code/router.swift.liquid}
+- {name: Protocol.swift, path: Code/protocol.swift.liquid}
+
+# The declarations for test files
+test_files:
+- {name: ViewTests.swift, path: Tests/view_tests.swift.liquid}
+- {name: PresenterTests.swift, path: Tests/presenter_tests.swift.liquid}
+- {name: RouterTests.swift, path: Tests/router_tests.swift.liquid}
+
+# Template dependencies
+dependencies:
+- ReactiveKit
+- ReactiveUIKit

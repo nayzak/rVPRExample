@@ -1,0 +1,17 @@
+# Template information section
+name: rvpr-controller-assembly
+summary: Assembly template for rVPR module based on view controller with router
+author: Ian Kazlauskas
+version: 1.0.0
+license: MIT
+
+# The declarations for code files
+code_files:
+- {name: Assembly.swift, path: Code/assembly.swift.liquid}
+
+# The declarations for test files
+test_files:
+- {name: AssemblyTests.swift, path: Tests/assembly_tests.swift.liquid}
+
+# Template dependencies
+dependencies:

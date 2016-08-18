@@ -1,0 +1,21 @@
+{% include 'header' %}
+struct {{ module_info.name }}Assembly {
+
+  static let make: {{ module_info.name }}Builder = { input in
+    let vc = {{ module_info.name }}ViewController()
+    vc.rvpr_loadViewIfNeeded()
+
+    let router = {{ module_info.name }}Router()
+    router.viewController = vc
+    router.navigationController = vc.navigationController
+
+    vc.retain(router)
+
+    let presenter = {{ module_info.name }}Presenter(input: input, view: vc, router: router)
+
+    bind(presenter, to: vc)
+    bind(presenter, to: router)
+
+    return (presenter, vc)
+  }
+}

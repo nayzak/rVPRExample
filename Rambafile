@@ -32,3 +32,5 @@ catalogs:
 templates:
 - {name: rusecase}
 - {name: rusecase-assembly}
+- {name: rvpr-xcontroller}
+- {name: rvpr-controller-assembly}

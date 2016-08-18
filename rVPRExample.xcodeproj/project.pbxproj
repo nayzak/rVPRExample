@@ -301,6 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				F59A42E61D65802700E9EFCD /* UseCases */,
+				F59A43131D65B48700E9EFCD /* VPRs */,
 			);
 			path = Assemblies;
 			sourceTree = "<group>";
@@ -346,6 +347,13 @@
 			sourceTree = "<group>";
 		};
 		F59A43121D65B07800E9EFCD /* VPRs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = VPRs;
+			sourceTree = "<group>";
+		};
+		F59A43131D65B48700E9EFCD /* VPRs */ = {
 			isa = PBXGroup;
 			children = (
 			);

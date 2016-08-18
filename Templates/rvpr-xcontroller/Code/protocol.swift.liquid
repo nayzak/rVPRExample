@@ -1,0 +1,35 @@
+{% include 'header' %}
+import ReactiveKit
+
+
+//MARK: View
+
+public protocol {{ module_info.name }}ViewInput {
+
+}
+
+public protocol {{ module_info.name }}ViewOutput {
+
+}
+
+
+//MARK: Router
+
+public protocol {{ module_info.name }}RouterInput {
+
+}
+
+public protocol {{ module_info.name }}RouterOutput {
+
+}
+
+
+//MARK: Module
+
+public typealias {{ module_info.name }}Input = ()
+
+public protocol {{ module_info.name }}Output {
+
+}
+
+public typealias {{ module_info.name }}Builder = (input: {{ module_info.name }}Input) -> ({{ module_info.name }}Output, Presentable)
