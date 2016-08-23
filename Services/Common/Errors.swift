@@ -7,5 +7,5 @@
 //
 
 public enum ServiceError: ErrorType {
-
+  case ConnectionLost
 }

@@ -22,11 +22,11 @@ public struct ListCategoriesInteractor: ListCategoriesInteractorOutput {
     let styleCategoryServiceError = PushStream<ServiceError>()
 
     self.categories = styleCategoryService.all()
-      .shareReplay()
       .feedActivityInto(styleCategoryServiceActivity)
       .toStream(feedErrorInto: styleCategoryServiceError)
+      .shareReplay()
 
-    self.error = styleCategoryServiceError.map(InteractorError.init)
-    self.pending = styleCategoryServiceActivity.toStream()
+    self.error = styleCategoryServiceError.map(InteractorError.init).shareReplay()
+    self.pending = styleCategoryServiceActivity.toStream().shareReplay()
   }
 }

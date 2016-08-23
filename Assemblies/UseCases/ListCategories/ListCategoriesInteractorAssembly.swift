@@ -7,10 +7,14 @@
 //
 
 import UseCases
+import Services
 
 struct ListCategoriesInteractorAssembly {
 
   static let make: ListCategoriesInteractorBuilder = { input in
-    return ListCategoriesInteractor(input: input)
+    return ListCategoriesInteractor(
+      input: input,
+      styleCategoryService: StyleCategoryServiceMoc()
+    )
   }
 }

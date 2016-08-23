@@ -7,6 +7,10 @@
 //
 
 import XCTest
+import ReactiveKit
+import Services
+@testable import Entities
+@testable import UseCases
 
 class ListCategoriesInteractorTests: XCTestCase {
 
@@ -16,8 +20,38 @@ class ListCategoriesInteractorTests: XCTestCase {
   }
 
   override func tearDown() {
-
+    rBag.dispose()
     super.tearDown()
+  }
+
+  func testNormalFlow() {
+    let service = NormalStyleCategoriesSecvice()
+
+    let i = ListCategoriesInteractor(input: (), styleCategoryService: service)
+
+    i.error.observeNext { _ in
+      XCTFail()
+    }.disposeIn(rBag)
+
+    let pending = Property<Bool?>(nil)
+    i.pending.bindTo(pending)
+
+    let pendingTriggedCount = Property(0)
+    i.pending.map({ _ in 1 }).scan(0, +).bindTo(pendingTriggedCount)
+
+    let error = Property<InteractorError?>(nil)
+    i.error.bindTo(error)
+
+    let categories = Property<[StyleCategory]?>(nil)
+    i.categories.bindTo(categories)
+
+    XCTAssertNil(error.value)
+    XCTAssertEqual(pendingTriggedCount.value, 2)
+    XCTAssertEqual(pending.value!, false)
+    XCTAssertEqual(categories.value!.count, service.categoriesSource.count)
+    zip(categories.value!, service.categoriesSource).forEach {
+      XCTAssertEqual($0, $1)
+    }
   }
 
 }

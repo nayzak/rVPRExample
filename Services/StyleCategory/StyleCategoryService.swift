@@ -13,3 +13,18 @@ public protocol StyleCategoryService: Cachable {
 
   func all() -> Operation<[StyleCategory], ServiceError>
 }
+
+public final class StyleCategoryServiceMoc: StyleCategoryService {
+
+  public init() {
+
+  }
+
+  public func all() -> Operation<[StyleCategory], ServiceError> {
+    return .just([])
+  }
+
+  public func invalidateCache() {
+
+  }
+}
