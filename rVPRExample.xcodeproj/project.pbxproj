@@ -38,6 +38,7 @@
 		F51CBB7E1D6C5BB8007D891D /* StyleCategoryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CBB7D1D6C5BB8007D891D /* StyleCategoryService.swift */; };
 		F51CBB811D6C5C4E007D891D /* Cachable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CBB801D6C5C4E007D891D /* Cachable.swift */; };
 		F51CBB831D6C5CEE007D891D /* Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51CBB821D6C5CEE007D891D /* Errors.swift */; };
+		F51CBB841D6C5E44007D891D /* Services.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F51CBB6E1D6C5B01007D891D /* Services.framework */; };
 		F55D65A51D6BE57600519DC2 /* ErrorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55D65A41D6BE57600519DC2 /* ErrorOutput.swift */; };
 		F5861E6F1D6BDCE700D57A17 /* Entities.h in Headers */ = {isa = PBXBuildFile; fileRef = F5861E6E1D6BDCE700D57A17 /* Entities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F5861E731D6BDCE700D57A17 /* Entities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5861E6C1D6BDCE700D57A17 /* Entities.framework */; };
@@ -296,6 +297,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F51CBB841D6C5E44007D891D /* Services.framework in Frameworks */,
 				F59A42C81D655F1B00E9EFCD /* ReactiveKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -6,25 +6,16 @@
 //  Copyright © 2016 nayzak. All rights reserved.
 //
 
-public let UseCaseErrorDomain = "UseCaseErrorDomain"
+import Services
 
-public enum UseCaseErrorCode: Int {
-  case DataFetchFailed
+public enum InteractorError: ErrorType {
+
+  case ServiceError(error: Services.ServiceError)
 }
 
-struct UseCaseError: ErrorType {
+extension InteractorError {
 
-  var _domain: String {
-    return UseCaseErrorDomain
-  }
-
-  var _code: Int {
-    return code.rawValue
-  }
-
-  private let code: UseCaseErrorCode
-
-  init(_ code: UseCaseErrorCode) {
-    self.code = code
+  init(serviceError: Services.ServiceError) {
+    self = InteractorError.ServiceError(error: serviceError)
   }
 }

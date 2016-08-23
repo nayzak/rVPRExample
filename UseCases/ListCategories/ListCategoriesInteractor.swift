@@ -7,17 +7,26 @@
 //
 
 import Entities
+import Services
 import ReactiveKit
 
 public struct ListCategoriesInteractor: ListCategoriesInteractorOutput {
 
   public let pending: Stream<Bool>
-  public let error: Stream<ErrorType>
+  public let error: Stream<InteractorError>
   public let categories: Stream<[StyleCategory]>
 
-  public init(input: ListCategoriesInteractorInput) {
-    pending = .just(false)
-    error = .completed()
-    categories = .just([])
+  public init(input: ListCategoriesInteractorInput, styleCategoryService: StyleCategoryService) {
+
+    let styleCategoryServiceActivity = PushStream<Bool>()
+    let styleCategoryServiceError = PushStream<ServiceError>()
+
+    self.categories = styleCategoryService.all()
+      .shareReplay()
+      .feedActivityInto(styleCategoryServiceActivity)
+      .toStream(feedErrorInto: styleCategoryServiceError)
+
+    self.error = styleCategoryServiceError.map(InteractorError.init)
+    self.pending = styleCategoryServiceActivity.toStream()
   }
 }

@@ -10,5 +10,5 @@ import ReactiveKit
 
 public protocol ErrorOutput {
 
-  var error: Stream<ErrorType> { get }
+  var error: Stream<InteractorError> { get }
 }
