@@ -18,8 +18,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     window = UIWindow(frame: UIScreen.mainScreen().bounds)
 
-    let (_, stylesList) = StylesListAssembly.make(input: ())
-    stylesList.putAsNavigationIn(window: window!)
+    let (_, categoriesList) = CategoriesListAssembly.make(input: ())
+    categoriesList.putAsNavigationIn(window: window!)
 
     window!.makeKeyAndVisible()
 
