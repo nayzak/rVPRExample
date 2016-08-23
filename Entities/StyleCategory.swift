@@ -6,13 +6,13 @@
 //  Copyright © 2016 nayzak. All rights reserved.
 //
 
-public struct Category {
+public struct StyleCategory {
   public let id: Int
   public let name: String
 }
 
-extension Category: Equatable { }
+extension StyleCategory: Equatable { }
 
-public func ==(lhs: Category, rhs: Category) -> Bool {
+public func ==(lhs: StyleCategory, rhs: StyleCategory) -> Bool {
   return lhs.id == rhs.id
 }

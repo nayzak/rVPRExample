@@ -6,6 +6,7 @@
 //  Copyright © 2016 nayzak. All rights reserved.
 //
 
+import Entities
 import ReactiveKit
 
 
@@ -13,8 +14,8 @@ import ReactiveKit
 
 public typealias ListCategoriesInteractorInput = ()
 
-public protocol ListCategoriesInteractorOutput {
-
+public protocol ListCategoriesInteractorOutput: PendingOutput, ErrorOutput {
+  var categories: Stream<[StyleCategory]> { get }
 }
 
 
