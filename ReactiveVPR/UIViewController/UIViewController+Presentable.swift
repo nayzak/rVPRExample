@@ -22,6 +22,16 @@ extension UIViewController: Presentable {
     window.rootViewController = self
   }
 
+  public func putAsNavigationIn(window window: UIWindow) {
+    if self is UINavigationController {
+      putIn(window: window)
+      return
+    }
+
+    let nc = navigationController ?? UINavigationController(rootViewController: self)
+    nc.putIn(window: window)
+  }
+
   public func present(using presenter: UIViewController) {
     presenter.presentViewController(self, animated: true, completion: nil)
   }

@@ -14,6 +14,8 @@ public protocol Presentable: class {
 
   func putIn(window window: UIWindow)
 
+  func putAsNavigationIn(window window: UIWindow)
+
   func present(using presenter: UIViewController)
 
   func present(using presenter: UIViewController, with transition: UIViewControllerTransitioningDelegate)
