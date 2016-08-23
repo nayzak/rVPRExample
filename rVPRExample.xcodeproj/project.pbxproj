@@ -19,9 +19,14 @@
 		4FC6228FEC24F9B100CACC47 /* StylesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4ECB165D422D03197C8347 /* StylesListView.swift */; };
 		634A622C0678E3EFC2873549 /* StylesListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE22EAE19ECDE4C36987B88 /* StylesListProtocol.swift */; };
 		6F6CE6EF3670502DBD27D5C8 /* CategoriesListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EFC556EE51FC6A763D44A0 /* CategoriesListPresenterTests.swift */; };
+		7B9FF4B506A79876BCCE239F /* ListCategoriesInteractorAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0860017076FA254DEE602145 /* ListCategoriesInteractorAssembly.swift */; };
 		9E6289E33DCB209CE1BCDE3F /* CategoriesListRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF2F24E2B4ED350B4CE538B5 /* CategoriesListRouterTests.swift */; };
+		A47256ADA5CB84A31CBF40A3 /* ListCategoriesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64CBA6B44CE2E60FE1A77C6 /* ListCategoriesProtocol.swift */; };
+		A80A3FCCBA247F2B4BE17552 /* ListCategoriesInteractorAssemblyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B85DF866CF0C15E96F4FCAEF /* ListCategoriesInteractorAssemblyTests.swift */; };
 		AA638E023D6BF356BD62CAD6 /* CategoriesListViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95B11F781D7FC3B430A8A03A /* CategoriesListViewTests.swift */; };
 		BB6A6033F3C52C77CFA73AD1 /* StylesListAssemblyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E774D5ED325BC7E9D036EADE /* StylesListAssemblyTests.swift */; };
+		C581B06B8DD2C1BA1B53D96A /* ListCategoriesInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3435FD955E44F9AC057F089C /* ListCategoriesInteractorTests.swift */; };
+		CA846BFAF5FCF90B47E2A1F4 /* ListCategoriesInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7E8C9F204DD6EB3424AB8A /* ListCategoriesInteractor.swift */; };
 		CDF401B5FA68BDF00868241F /* CategoriesListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B0F89DAFDF644A873D2E6CA /* CategoriesListRouter.swift */; };
 		D3EF9BEF4DC361F174711882 /* StylesListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF354DEBFBEB825231BC5617 /* StylesListRouter.swift */; };
 		F5861E6F1D6BDCE700D57A17 /* Entities.h in Headers */ = {isa = PBXBuildFile; fileRef = F5861E6E1D6BDCE700D57A17 /* Entities.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -172,18 +177,23 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0860017076FA254DEE602145 /* ListCategoriesInteractorAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListCategoriesInteractorAssembly.swift; sourceTree = "<group>"; };
 		11BF47B1E18356689A71B5DC /* CategoriesListAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CategoriesListAssembly.swift; sourceTree = "<group>"; };
 		158C90D4DD21D5555B78F996 /* StylesListRouterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StylesListRouterTests.swift; sourceTree = "<group>"; };
 		29BDD9B41276321457C68BED /* CategoriesListProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CategoriesListProtocol.swift; sourceTree = "<group>"; };
+		3435FD955E44F9AC057F089C /* ListCategoriesInteractorTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListCategoriesInteractorTests.swift; sourceTree = "<group>"; };
+		4A7E8C9F204DD6EB3424AB8A /* ListCategoriesInteractor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListCategoriesInteractor.swift; sourceTree = "<group>"; };
 		63EFC556EE51FC6A763D44A0 /* CategoriesListPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CategoriesListPresenterTests.swift; sourceTree = "<group>"; };
 		684934FD03FE19ACB2A32CDC /* StylesListViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StylesListViewTests.swift; sourceTree = "<group>"; };
 		89F904568603E88F269AA86F /* StylesListAssembly.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StylesListAssembly.swift; sourceTree = "<group>"; };
 		8B0F89DAFDF644A873D2E6CA /* CategoriesListRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CategoriesListRouter.swift; sourceTree = "<group>"; };
 		95B11F781D7FC3B430A8A03A /* CategoriesListViewTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CategoriesListViewTests.swift; sourceTree = "<group>"; };
 		A03D30DBB1DAD2002C014589 /* CategoriesListAssemblyTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CategoriesListAssemblyTests.swift; sourceTree = "<group>"; };
+		B85DF866CF0C15E96F4FCAEF /* ListCategoriesInteractorAssemblyTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListCategoriesInteractorAssemblyTests.swift; sourceTree = "<group>"; };
 		BF354DEBFBEB825231BC5617 /* StylesListRouter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StylesListRouter.swift; sourceTree = "<group>"; };
 		D24CAC901267B8F016DEFDA8 /* StylesListPresenterTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StylesListPresenterTests.swift; sourceTree = "<group>"; };
 		D582B1AD75C386B23365034C /* CategoriesListPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CategoriesListPresenter.swift; sourceTree = "<group>"; };
+		D64CBA6B44CE2E60FE1A77C6 /* ListCategoriesProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ListCategoriesProtocol.swift; sourceTree = "<group>"; };
 		E555F2CB97EAB5A38A54CFA8 /* StylesListPresenter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StylesListPresenter.swift; sourceTree = "<group>"; };
 		E774D5ED325BC7E9D036EADE /* StylesListAssemblyTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StylesListAssemblyTests.swift; sourceTree = "<group>"; };
 		EB4ECB165D422D03197C8347 /* StylesListView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StylesListView.swift; sourceTree = "<group>"; };
@@ -320,6 +330,14 @@
 			path = StylesList;
 			sourceTree = "<group>";
 		};
+		354106E4B2257BFBED1A8BAE /* ListCategories */ = {
+			isa = PBXGroup;
+			children = (
+				3435FD955E44F9AC057F089C /* ListCategoriesInteractorTests.swift */,
+			);
+			path = ListCategories;
+			sourceTree = "<group>";
+		};
 		3F0C407BD0E0F927D90F2B3C /* CategoriesList */ = {
 			isa = PBXGroup;
 			children = (
@@ -358,6 +376,22 @@
 			path = CategoriesList;
 			sourceTree = "<group>";
 		};
+		6AB1FB401E82EEACF9E0EBF8 /* ListCategories */ = {
+			isa = PBXGroup;
+			children = (
+				B85DF866CF0C15E96F4FCAEF /* ListCategoriesInteractorAssemblyTests.swift */,
+			);
+			path = ListCategories;
+			sourceTree = "<group>";
+		};
+		70DEEE02B81511A22304C0C5 /* ListCategories */ = {
+			isa = PBXGroup;
+			children = (
+				0860017076FA254DEE602145 /* ListCategoriesInteractorAssembly.swift */,
+			);
+			path = ListCategories;
+			sourceTree = "<group>";
+		};
 		BC8970C5FDD7E2E47CD69A1E /* Beers */ = {
 			isa = PBXGroup;
 			children = (
@@ -373,6 +407,15 @@
 				11BF47B1E18356689A71B5DC /* CategoriesListAssembly.swift */,
 			);
 			path = CategoriesList;
+			sourceTree = "<group>";
+		};
+		D4E4C122CF02E84DA909EB8C /* ListCategories */ = {
+			isa = PBXGroup;
+			children = (
+				4A7E8C9F204DD6EB3424AB8A /* ListCategoriesInteractor.swift */,
+				D64CBA6B44CE2E60FE1A77C6 /* ListCategoriesProtocol.swift */,
+			);
+			path = ListCategories;
 			sourceTree = "<group>";
 		};
 		DDBE023AB3CAC71EE5A23DC6 /* CategoriesList */ = {
@@ -453,6 +496,7 @@
 				F59A42A51D655E4C00E9EFCD /* UseCases.h */,
 				F59A42A71D655E4C00E9EFCD /* Info.plist */,
 				F59A42C91D6562F600E9EFCD /* Common */,
+				D4E4C122CF02E84DA909EB8C /* ListCategories */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -461,6 +505,7 @@
 			isa = PBXGroup;
 			children = (
 				F59A42B51D655E4C00E9EFCD /* Info.plist */,
+				354106E4B2257BFBED1A8BAE /* ListCategories */,
 			);
 			path = UseCasesTests;
 			sourceTree = "<group>";
@@ -494,6 +539,7 @@
 		F59A42D61D657F6800E9EFCD /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				70DEEE02B81511A22304C0C5 /* ListCategories */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -519,6 +565,7 @@
 		F59A42E61D65802700E9EFCD /* UseCases */ = {
 			isa = PBXGroup;
 			children = (
+				6AB1FB401E82EEACF9E0EBF8 /* ListCategories */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -949,6 +996,7 @@
 				F59A428C1D655A7400E9EFCD /* AppDelegate.swift in Sources */,
 				0FDE9E47149917CB4DE3378B /* StylesListAssembly.swift in Sources */,
 				12C7A01A30D6A1B6D7D4FEEE /* CategoriesListAssembly.swift in Sources */,
+				7B9FF4B506A79876BCCE239F /* ListCategoriesInteractorAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -957,6 +1005,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F59A42CB1D65631500E9EFCD /* PendingOutput.swift in Sources */,
+				CA846BFAF5FCF90B47E2A1F4 /* ListCategoriesInteractor.swift in Sources */,
+				A47256ADA5CB84A31CBF40A3 /* ListCategoriesProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -964,6 +1014,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C581B06B8DD2C1BA1B53D96A /* ListCategoriesInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -973,6 +1024,7 @@
 			files = (
 				BB6A6033F3C52C77CFA73AD1 /* StylesListAssemblyTests.swift in Sources */,
 				26D473D03206B0255957AEB8 /* CategoriesListAssemblyTests.swift in Sources */,
+				A80A3FCCBA247F2B4BE17552 /* ListCategoriesInteractorAssemblyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
