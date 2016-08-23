@@ -15,6 +15,9 @@
 		634A622C0678E3EFC2873549 /* StylesListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECE22EAE19ECDE4C36987B88 /* StylesListProtocol.swift */; };
 		BB6A6033F3C52C77CFA73AD1 /* StylesListAssemblyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E774D5ED325BC7E9D036EADE /* StylesListAssemblyTests.swift */; };
 		D3EF9BEF4DC361F174711882 /* StylesListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF354DEBFBEB825231BC5617 /* StylesListRouter.swift */; };
+		F5861E6F1D6BDCE700D57A17 /* Entities.h in Headers */ = {isa = PBXBuildFile; fileRef = F5861E6E1D6BDCE700D57A17 /* Entities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5861E731D6BDCE700D57A17 /* Entities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5861E6C1D6BDCE700D57A17 /* Entities.framework */; };
+		F5861E741D6BDCE700D57A17 /* Entities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F5861E6C1D6BDCE700D57A17 /* Entities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F59A428C1D655A7400E9EFCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59A428B1D655A7400E9EFCD /* AppDelegate.swift */; };
 		F59A42931D655A7400E9EFCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F59A42921D655A7400E9EFCD /* Assets.xcassets */; };
 		F59A42961D655A7400E9EFCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F59A42941D655A7400E9EFCD /* LaunchScreen.storyboard */; };
@@ -54,6 +57,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F5861E711D6BDCE700D57A17 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F59A42801D655A7400E9EFCD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5861E6B1D6BDCE700D57A17;
+			remoteInfo = Entities;
+		};
 		F59A42AE1D655E4C00E9EFCD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F59A42801D655A7400E9EFCD /* Project object */;
@@ -122,6 +132,7 @@
 				F59A43211D65B89B00E9EFCD /* ReactiveVPR.framework in Embed Frameworks */,
 				F59A43021D65AF0A00E9EFCD /* UI.framework in Embed Frameworks */,
 				F59A42BA1D655E4C00E9EFCD /* UseCases.framework in Embed Frameworks */,
+				F5861E741D6BDCE700D57A17 /* Entities.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,6 +171,9 @@
 		E774D5ED325BC7E9D036EADE /* StylesListAssemblyTests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StylesListAssemblyTests.swift; sourceTree = "<group>"; };
 		EB4ECB165D422D03197C8347 /* StylesListView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StylesListView.swift; sourceTree = "<group>"; };
 		ECE22EAE19ECDE4C36987B88 /* StylesListProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StylesListProtocol.swift; sourceTree = "<group>"; };
+		F5861E6C1D6BDCE700D57A17 /* Entities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Entities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5861E6E1D6BDCE700D57A17 /* Entities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Entities.h; sourceTree = "<group>"; };
+		F5861E701D6BDCE700D57A17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F59A42881D655A7400E9EFCD /* rVPRExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rVPRExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F59A428B1D655A7400E9EFCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F59A42921D655A7400E9EFCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -193,10 +207,18 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F5861E681D6BDCE700D57A17 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F59A42851D655A7400E9EFCD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5861E731D6BDCE700D57A17 /* Entities.framework in Frameworks */,
 				F59A43371D65C2F500E9EFCD /* ReactiveKit.framework in Frameworks */,
 				F59A43201D65B89B00E9EFCD /* ReactiveVPR.framework in Frameworks */,
 				F59A43011D65AF0A00E9EFCD /* UI.framework in Frameworks */,
@@ -313,12 +335,22 @@
 			path = Beers;
 			sourceTree = "<group>";
 		};
+		F5861E6D1D6BDCE700D57A17 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				F5861E6E1D6BDCE700D57A17 /* Entities.h */,
+				F5861E701D6BDCE700D57A17 /* Info.plist */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
 		F59A427F1D655A7400E9EFCD = {
 			isa = PBXGroup;
 			children = (
 				F59A428A1D655A7400E9EFCD /* rVPRExample */,
 				F59A42D51D657F3E00E9EFCD /* Assemblies */,
 				F59A42DC1D657FD300E9EFCD /* rVPRExampleTests */,
+				F5861E6D1D6BDCE700D57A17 /* Entities */,
 				F59A42A41D655E4C00E9EFCD /* UseCases */,
 				F59A42B21D655E4C00E9EFCD /* UseCasesTests */,
 				F59A42ED1D65AF0A00E9EFCD /* UI */,
@@ -339,6 +371,7 @@
 				F59A42EC1D65AF0A00E9EFCD /* UI.framework */,
 				F59A42F51D65AF0A00E9EFCD /* UITests.xctest */,
 				F59A43191D65B89B00E9EFCD /* ReactiveVPR.framework */,
+				F5861E6C1D6BDCE700D57A17 /* Entities.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -508,6 +541,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		F5861E691D6BDCE700D57A17 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5861E6F1D6BDCE700D57A17 /* Entities.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F59A42A01D655E4C00E9EFCD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -535,6 +576,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		F5861E6B1D6BDCE700D57A17 /* Entities */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5861E751D6BDCE700D57A17 /* Build configuration list for PBXNativeTarget "Entities" */;
+			buildPhases = (
+				F5861E671D6BDCE700D57A17 /* Sources */,
+				F5861E681D6BDCE700D57A17 /* Frameworks */,
+				F5861E691D6BDCE700D57A17 /* Headers */,
+				F5861E6A1D6BDCE700D57A17 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Entities;
+			productName = Entities;
+			productReference = F5861E6C1D6BDCE700D57A17 /* Entities.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		F59A42871D655A7400E9EFCD /* rVPRExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F59A429A1D655A7400E9EFCD /* Build configuration list for PBXNativeTarget "rVPRExample" */;
@@ -551,6 +610,7 @@
 				F59A42B71D655E4C00E9EFCD /* PBXTargetDependency */,
 				F59A43001D65AF0A00E9EFCD /* PBXTargetDependency */,
 				F59A431F1D65B89B00E9EFCD /* PBXTargetDependency */,
+				F5861E721D6BDCE700D57A17 /* PBXTargetDependency */,
 			);
 			name = rVPRExample;
 			productName = rVPRExample;
@@ -679,6 +739,9 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = nayzak;
 				TargetAttributes = {
+					F5861E6B1D6BDCE700D57A17 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
 					F59A42871D655A7400E9EFCD = {
 						CreatedOnToolsVersion = 7.3.1;
 					};
@@ -723,11 +786,19 @@
 				F59A42EB1D65AF0A00E9EFCD /* UI */,
 				F59A42F41D65AF0A00E9EFCD /* UITests */,
 				F59A43181D65B89B00E9EFCD /* ReactiveVPR */,
+				F5861E6B1D6BDCE700D57A17 /* Entities */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F5861E6A1D6BDCE700D57A17 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F59A42861D655A7400E9EFCD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -801,6 +872,13 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F5861E671D6BDCE700D57A17 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F59A42841D655A7400E9EFCD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -871,6 +949,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F5861E721D6BDCE700D57A17 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5861E6B1D6BDCE700D57A17 /* Entities */;
+			targetProxy = F5861E711D6BDCE700D57A17 /* PBXContainerItemProxy */;
+		};
 		F59A42AF1D655E4C00E9EFCD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F59A42A21D655E4C00E9EFCD /* UseCases */;
@@ -925,6 +1008,46 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F5861E761D6BDCE700D57A17 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Entities/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nayzak.Entities;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F5861E771D6BDCE700D57A17 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Entities/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.nayzak.Entities;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		F59A42981D655A7400E9EFCD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1283,6 +1406,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F5861E751D6BDCE700D57A17 /* Build configuration list for PBXNativeTarget "Entities" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5861E761D6BDCE700D57A17 /* Debug */,
+				F5861E771D6BDCE700D57A17 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		F59A42831D655A7400E9EFCD /* Build configuration list for PBXProject "rVPRExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
