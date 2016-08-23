@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>3</integer>
 		</dict>
+		<key>Services.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>UI.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -27,6 +32,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>F51CBB6D1D6C5B01007D891D</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>F5861E6B1D6BDCE700D57A17</key>
 		<dict>
 			<key>primary</key>
