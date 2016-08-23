@@ -242,6 +242,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F5861E661D6BD8FD00D57A17 /* Beers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Beers;
+			sourceTree = "<group>";
+		};
 		F59A427F1D655A7400E9EFCD = {
 			isa = PBXGroup;
 			children = (
@@ -381,6 +388,7 @@
 		F59A43101D65AFB200E9EFCD /* Stories */ = {
 			isa = PBXGroup;
 			children = (
+				F5861E661D6BD8FD00D57A17 /* Beers */,
 			);
 			path = Stories;
 			sourceTree = "<group>";
