@@ -18,6 +18,7 @@
 		F5861E6F1D6BDCE700D57A17 /* Entities.h in Headers */ = {isa = PBXBuildFile; fileRef = F5861E6E1D6BDCE700D57A17 /* Entities.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F5861E731D6BDCE700D57A17 /* Entities.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5861E6C1D6BDCE700D57A17 /* Entities.framework */; };
 		F5861E741D6BDCE700D57A17 /* Entities.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F5861E6C1D6BDCE700D57A17 /* Entities.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F5861E791D6BDD4E00D57A17 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5861E781D6BDD4E00D57A17 /* Category.swift */; };
 		F59A428C1D655A7400E9EFCD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F59A428B1D655A7400E9EFCD /* AppDelegate.swift */; };
 		F59A42931D655A7400E9EFCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F59A42921D655A7400E9EFCD /* Assets.xcassets */; };
 		F59A42961D655A7400E9EFCD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F59A42941D655A7400E9EFCD /* LaunchScreen.storyboard */; };
@@ -174,6 +175,7 @@
 		F5861E6C1D6BDCE700D57A17 /* Entities.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Entities.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5861E6E1D6BDCE700D57A17 /* Entities.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Entities.h; sourceTree = "<group>"; };
 		F5861E701D6BDCE700D57A17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5861E781D6BDD4E00D57A17 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		F59A42881D655A7400E9EFCD /* rVPRExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rVPRExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F59A428B1D655A7400E9EFCD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F59A42921D655A7400E9EFCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -340,6 +342,7 @@
 			children = (
 				F5861E6E1D6BDCE700D57A17 /* Entities.h */,
 				F5861E701D6BDCE700D57A17 /* Info.plist */,
+				F5861E781D6BDD4E00D57A17 /* Category.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -876,6 +879,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5861E791D6BDD4E00D57A17 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1011,6 +1015,7 @@
 		F5861E761D6BDCE700D57A17 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -1023,6 +1028,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.nayzak.Entities;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -1031,6 +1037,7 @@
 		F5861E771D6BDCE700D57A17 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
