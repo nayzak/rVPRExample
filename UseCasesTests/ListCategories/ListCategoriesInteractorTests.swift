@@ -29,10 +29,6 @@ class ListCategoriesInteractorTests: XCTestCase {
 
     let i = ListCategoriesInteractor(input: (), styleCategoryService: service)
 
-    i.error.observeNext { _ in
-      XCTFail()
-    }.disposeIn(rBag)
-
     let pending = Property<Bool?>(nil)
     i.pending.bindTo(pending)
 
