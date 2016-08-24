@@ -10,7 +10,7 @@ import ReactiveKit
 @testable import Entities
 import Services
 
-class ErrorCategoriesSecvice: StyleCategoryService {
+class ErrorStyleCategoriesSecvice: StyleCategoryService {
 
   func all() -> Operation<[StyleCategory], ServiceError> {
     return .failure(.ConnectionLost)

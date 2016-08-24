@@ -38,5 +38,18 @@ class ListCategoriesInteractorTests: XCTestCase {
     i.categories.expectNext([service.categoriesSource], isEqual: { $0 == $1 })
       .disposeIn(rBag)
   }
-  
+
+  func testServiceErrorCase() {
+    let service = ErrorStyleCategoriesSecvice()
+    let i = ListCategoriesInteractor(input: (), styleCategoryService: service)
+
+    i.pending.expectNext([true, false])
+      .disposeIn(rBag)
+
+    i.error.expectNextCount(1)
+      .disposeIn(rBag)
+
+    i.categories.expectNextCount(0)
+      .disposeIn(rBag)
+  }
 }
