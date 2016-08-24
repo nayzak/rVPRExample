@@ -12,6 +12,7 @@ import Services
 @testable import Entities
 @testable import UseCases
 
+
 class ListCategoriesInteractorTests: XCTestCase {
 
   override func setUp() {
@@ -24,30 +25,18 @@ class ListCategoriesInteractorTests: XCTestCase {
     super.tearDown()
   }
 
-  func testNormalFlow() {
+  func testNormalCase() {
     let service = NormalStyleCategoriesSecvice()
-
     let i = ListCategoriesInteractor(input: (), styleCategoryService: service)
 
-    let pending = Property<Bool?>(nil)
-    i.pending.bindTo(pending)
+    i.pending.expectNext([true, false])
+      .disposeIn(rBag)
 
-    let pendingTriggedCount = Property(0)
-    i.pending.map({ _ in 1 }).scan(0, +).bindTo(pendingTriggedCount)
+    i.error.expectNextCount(0)
+      .disposeIn(rBag)
 
-    let error = Property<InteractorError?>(nil)
-    i.error.bindTo(error)
-
-    let categories = Property<[StyleCategory]?>(nil)
-    i.categories.bindTo(categories)
-
-    XCTAssertNil(error.value)
-    XCTAssertEqual(pendingTriggedCount.value, 2)
-    XCTAssertEqual(pending.value!, false)
-    XCTAssertEqual(categories.value!.count, service.categoriesSource.count)
-    zip(categories.value!, service.categoriesSource).forEach {
-      XCTAssertEqual($0, $1)
-    }
+    i.categories.expectNext([service.categoriesSource], isEqual: { $0 == $1 })
+      .disposeIn(rBag)
   }
-
+  
 }
